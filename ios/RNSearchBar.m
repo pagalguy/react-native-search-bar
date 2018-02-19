@@ -25,6 +25,11 @@ RCT_NOT_IMPLEMENTED(-initWithCoder:(NSCoder *)aDecoder)
     return self;
 }
 
+- (bool) searchBarShouldBeginEditing:(UISearchBar *)searchBar
+{
+    return searchBar.shouldBeginEditing;     
+}
+
 - (void) searchBarTextDidEndEditing:(UISearchBar *)searchBar
 {
     [_eventDispatcher sendTextEventWithType:RCTTextEventTypeBlur

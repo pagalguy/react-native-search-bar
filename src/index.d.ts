@@ -48,17 +48,24 @@ interface Props {
 
   /**
    * String for the cancel button
-   * 
+   *
    * Default is 'Cancel'
    */
   cancelButtonText?: string
 
   /**
    * Only shows the cancel button while the search bar has focus
-   * 
+   *
    * Default is true
    */
   showsCancelButtonWhileEditing?: boolean
+
+  /**
+   * Should begin editing when tapped
+   *
+   * Default is true
+   */
+  shouldBeginEditing?: boolean
 
   /**
    * Indicates whether the Return key is automatically enabled when the user is entering text.
@@ -104,35 +111,35 @@ interface Props {
 
   /**
    * The type of keyboard to display
-   * 
+   *
    * Default is 'default'
    */
   keyboardType?: KeyboardType | KeyboardTypeIOS
 
   /**
    * The appearance of the keyboard
-   * 
+   *
    * Default is 'default'
    */
   keyboardAppearance?: 'default' | 'dark' | 'light'
 
   /**
    * The auto-capitalization behavior
-   * 
+   *
    * Default is 'sentences'
    */
   autoCapitalize?: 'none' | 'sentences' | 'words' | 'characters'
 
   /**
    * If autoCorrect is enabled
-   * 
+   *
    * Default is false
    */
   autoCorrect?: boolean
 
   /**
    * If red underline is shown for misspelt words
-   * 
+   *
    * Default is false
    */
   spellCheck?: boolean

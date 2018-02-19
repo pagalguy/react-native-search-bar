@@ -46,6 +46,7 @@ RCT_EXPORT_MODULE()
     return YES;
 }
 
+RCT_EXPORT_VIEW_PROPERTY(shouldBeginEditing, BOOL)
 RCT_EXPORT_VIEW_PROPERTY(onSearchButtonPress, RCTBubblingEventBlock)
 RCT_EXPORT_VIEW_PROPERTY(onCancelButtonPress, RCTBubblingEventBlock)
 RCT_EXPORT_VIEW_PROPERTY(placeholder, NSString)
