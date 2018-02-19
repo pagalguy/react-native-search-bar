@@ -27,7 +27,7 @@ RCT_NOT_IMPLEMENTED(-initWithCoder:(NSCoder *)aDecoder)
 
 - (bool) searchBarShouldBeginEditing:(UISearchBar *)searchBar
 {
-    return searchBar.shouldBeginEditing;     
+    return self._jsShouldBeginEditing;
 }
 
 - (void) searchBarTextDidEndEditing:(UISearchBar *)searchBar

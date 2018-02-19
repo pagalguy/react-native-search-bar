@@ -46,7 +46,11 @@ RCT_EXPORT_MODULE()
     return YES;
 }
 
-RCT_EXPORT_VIEW_PROPERTY(shouldBeginEditing, BOOL)
+RCT_CUSTOM_VIEW_PROPERTY(shouldBeginEditing, BOOL, RNSearchBar)
+{
+    BOOL value = [RCTConvert BOOL:json];
+    view._jsShouldBeginEditing = value;
+}
 RCT_EXPORT_VIEW_PROPERTY(onSearchButtonPress, RCTBubblingEventBlock)
 RCT_EXPORT_VIEW_PROPERTY(onCancelButtonPress, RCTBubblingEventBlock)
 RCT_EXPORT_VIEW_PROPERTY(placeholder, NSString)
