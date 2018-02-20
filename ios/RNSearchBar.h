@@ -8,6 +8,7 @@
 - (instancetype)initWithEventDispatcher:(RCTEventDispatcher *)eventDispatcher NS_DESIGNATED_INITIALIZER;
 
 @property(nonatomic) BOOL _jsShowsCancelButton;
+@property(nonatomic) BOOL _jsShouldBeginEditing;
 @property(nonatomic, copy) RCTBubblingEventBlock onSearchButtonPress;
 @property(nonatomic, copy) RCTBubblingEventBlock onCancelButtonPress;
 
